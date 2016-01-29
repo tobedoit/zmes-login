@@ -24,7 +24,7 @@
             <input type="password" name="pass2" id="pass2" class="input" size="20" value="" autocomplete="off" minlength="8" />
         </p>
 
-        <p class="description"><?php echo wp_get_password_hint(); ?></p>
+        <p class="description"><?php _e( '비밀번호는 최소 8자 이상을 사용하세요. 영문 대문자, 소문자, 숫자와 ! " ? $ % & &와 같은 특수문자를 사용하시면 보다 안전합니다.', 'personalize-login' ) ?></p>
 
         <p class="resetpass-submit">
             <input type="submit" name="submit" id="resetpass-button"

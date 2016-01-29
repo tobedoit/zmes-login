@@ -33,10 +33,6 @@
 		add_action( 'login_form_resetpass', array( $this, 'do_password_reset' ) );
 		// Other customizations
 		add_filter( 'retrieve_password_message', array( $this, 'replace_retrieve_password_message' ), 10, 4 );
-		// Zmes Custom!
-		add_filter( 'password_hint', function( $text ){
-    return __( ' 비밀번호는 최소 8자 이상을 사용하세요. 영문 대문자, 소문자, 숫자와 ! " ? $ % & &와 같은 특수문자를 사용하시면 보다 안전합니다.' );
-});
 		// Shortcodes
 		add_shortcode( 'custom-login-form', array( $this, 'render_login_form' ) );
 		add_shortcode( 'custom-register-form', array( $this, 'render_register_form' ) );
